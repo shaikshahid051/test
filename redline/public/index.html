@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>RedLine Two-Wheeler Works — Expert Bike Service & Repair</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--red:#D90429;--red2:#B8031F;--bg:#fff;--bg2:#F5F5F6;--card:#fff;--tx:#111;--mu:#5C6068;--bd:#E4E4E7;--dk:#0D0D0F;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D0D0F;--bg2:#151518;--card:#1B1B1F;--tx:#F3F3F4;--mu:#A4A8B0;--bd:#2D2D33;--red:#FF3B52;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D0D0F;--bg2:#151518;--card:#1B1B1F;--tx:#F3F3F4;--mu:#A4A8B0;--bd:#2D2D33;--red:#FF3B52;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(68px + env(safe-area-inset-top,0px))}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}a{color:inherit;text-decoration:none}
+.w{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--dk);color:#fff}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:17px;letter-spacing:.3px}.logo i{width:32px;height:32px;border-radius:9px;background:#D90429;display:grid;place-items:center;font-style:normal}
+nav{display:flex;gap:18px;font-size:14px;color:#C9CBD0}nav a:hover{color:#fff}@media(max-width:860px){nav{display:none}}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 20px;font:700 15px inherit;font-family:inherit;cursor:pointer;background:#D90429;color:#fff;transition:.2s}
+.btn:hover{background:var(--red2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(217,4,41,.35)}.btn.g{background:transparent;border:1.5px solid #fff}.btn.k{background:#0D0D0F;color:#fff;border:1px solid #444}.btn.l{background:transparent;color:var(--tx);border:1.5px solid var(--bd)}
+.btn.sm{padding:7px 12px;font-size:13px}
+.hero{background:radial-gradient(circle at 80% 20%,#3b0710,#0D0D0F 60%);color:#fff;padding:64px 0 70px}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}@media(max-width:820px){.hero .w{grid-template-columns:1fr}}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.08;margin:10px 0 14px}.hero p{color:#C9CBD0;font-size:18px;margin:0 0 24px}
+section{padding:58px 0}section.alt{background:var(--bg2)}h2{font-size:30px;margin:0 0 6px}h2:after{content:"";display:block;width:48px;height:4px;background:var(--red);border-radius:4px;margin-top:8px}
+.sub{color:var(--mu);margin:12px 0 26px;max-width:640px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(235px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.06);transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(0,0,0,.14)}
+.card h3{margin:8px 0 4px;font-size:17px}.card p{margin:0 0 8px;color:var(--mu);font-size:14.5px}.ic{font-size:26px;width:48px;height:48px;border-radius:13px;background:rgba(217,4,41,.12);display:grid;place-items:center}
+.pr{color:var(--red);font-weight:800}.stars{color:#F59E0B;letter-spacing:2px}
+.tag{font-size:12.5px;color:var(--mu)}.sample{display:inline-block;font-size:11.5px;font-weight:700;background:rgba(245,158,11,.2);color:var(--tx);border-radius:6px;padding:2px 8px}
+label{display:block;font-size:13px;font-weight:600;margin:10px 0 4px}
+input,select,textarea{width:100%;padding:11px 12px;border:1.5px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:15px inherit;font-family:inherit}
+input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px solid var(--red);outline-offset:1px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:560px){.row{grid-template-columns:1fr}}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}@media(max-width:820px){.two{grid-template-columns:1fr}}
+.err{color:#DC2626;font-size:13px;margin-top:6px}.ok{background:rgba(22,163,74,.12);border:1px solid #16A34A;border-radius:12px;padding:14px;margin-top:14px}
+table{width:100%;border-collapse:collapse}td,th{padding:12px 10px;border-bottom:1px solid var(--bd);text-align:left;font-size:15px}td:last-child,th:last-child{text-align:right;color:var(--red);font-weight:700;white-space:nowrap}
+.tw{overflow-x:auto;background:var(--card);border-radius:16px;border:1px solid var(--bd);padding:6px 12px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}.gal div{aspect-ratio:4/3;border-radius:14px;background:linear-gradient(135deg,#1c1c20,#3a0a12);color:#fff;display:grid;place-items:center;text-align:center;font-size:13px;padding:10px;transition:.25s}.gal div:hover{transform:scale(1.03)}.gal b{display:block;font-size:34px}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.35);z-index:40;transition:.2s}.wa:hover{transform:scale(1.08)}
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:-36px;position:relative}.hl .card{text-align:center;padding:16px}
+footer{background:var(--dk);color:#A4A8B0;padding:34px 0;font-size:14px}footer a{margin-right:16px;display:inline-block}
+dialog{border:0;border-radius:16px;padding:20px;width:min(720px,94%);max-height:88vh;background:var(--card);color:var(--tx)}dialog::backdrop{background:rgba(0,0,0,.65)}
+.ed{border:1px solid var(--bd);border-radius:12px;padding:10px;margin-bottom:8px}
+</style></head><body>
+<header><div class="w"><a class="logo" href="#home"><i aria-hidden="true">🏍️</i><span id="bn"></span></a>
+<nav aria-label="Main"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href="#pricing">Pricing</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+<span><a class="btn sm" href="#book">Book Now</a> <button class="btn sm k" onclick="owner()">Owner</button></span></div></header>
+<main id="home">
+<div class="hero"><div class="w"><div><span class="tag" style="color:#FF8A99;font-weight:700">⭐ Sample 4.8 rating · Bikes &amp; scooters</span>
+<h1>Expert Two-Wheeler Service &amp; Repair You Can Trust.</h1>
+<p>Reliable bike servicing, expert repairs, and affordable prices to keep you moving.</p>
+<a class="btn" href="#book">Book a Service</a> <a class="btn g" id="callb" href="#">Call Now</a></div>
+<svg viewBox="0 0 420 280" role="img" aria-label="Mechanic repairing a motorcycle"><ellipse cx="210" cy="250" rx="190" ry="14" fill="#000" opacity=".4"/><circle cx="130" cy="200" r="46" fill="none" stroke="#fff" stroke-width="9"/><circle cx="130" cy="200" r="8" fill="#D90429"/><circle cx="330" cy="200" r="46" fill="none" stroke="#fff" stroke-width="9"/><circle cx="330" cy="200" r="8" fill="#D90429"/><path d="M130 200l60-70h90l50 70M190 130l-14-34h-30M270 130l-14 40h-70l-30 30" fill="none" stroke="#D90429" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><rect x="190" y="108" width="80" height="26" rx="12" fill="#fff"/><circle cx="50" cy="90" r="20" fill="#FDBA74"/><path d="M20 210c0-50 14-80 30-80s30 30 30 80z" fill="#D90429"/><path d="M78 160l50 20" stroke="#FDBA74" stroke-width="9" stroke-linecap="round"/></svg></div></div>
+<div class="w"><div class="hl"><div class="card"><div class="ic" style="margin:auto">🔧</div><b>Experienced mechanics</b></div><div class="card"><div class="ic" style="margin:auto">₹</div><b>Affordable pricing</b></div><div class="card"><div class="ic" style="margin:auto">✅</div><b>Genuine spare parts</b></div><div class="card"><div class="ic" style="margin:auto">⚡</div><b>Quick service</b></div></div></div>
+
+<section id="services"><div class="w"><h2>Our Services</h2><p class="sub">Starting prices are indicative and subject to inspection.</p><div class="grid" id="sv"></div></div></section>
+
+<section id="book" class="alt"><div class="w two"><div><h2>Book a Service</h2><p class="sub">Choose a slot and we'll confirm it. A booking counts only when the green confirmation appears.</p>
+<form id="bf" novalidate onsubmit="return book(event)"><div class="row"><div><label for="n">Your name</label><input id="n" autocomplete="name" maxlength="60"></div><div><label for="m">Mobile number</label><input id="m" inputmode="numeric" maxlength="10" placeholder="10-digit number" autocomplete="tel"></div></div>
+<div class="row"><div><label for="br">Bike / scooter brand</label><input id="br" maxlength="30" placeholder="e.g. Honda"></div><div><label for="md">Model</label><input id="md" maxlength="30" placeholder="e.g. Activa 6G"></div></div>
+<div class="row"><div><label for="rg">Registration no. (optional)</label><input id="rg" maxlength="14" placeholder="TS09AB1234"></div><div><label for="sv2">Required service</label><select id="sv2"></select></div></div>
+<div class="row"><div><label for="dt">Preferred date</label><input id="dt" type="date"></div><div><label for="tm">Preferred time</label><select id="tm"></select></div></div>
+<label for="pb">Problem description</label><textarea id="pb" rows="3" maxlength="300"></textarea>
+<div class="err" id="be" role="alert"></div><button class="btn" style="margin-top:14px;width:100%">Confirm Booking</button></form><div id="bo"></div></div>
+<div id="contact"><h2>Contact &amp; Location</h2><div class="card" style="margin-top:18px" id="ct"></div>
+<p><a class="btn" id="wab" target="_blank" rel="noopener">💬 Chat on WhatsApp</a> <a class="btn l" id="mp" target="_blank" rel="noopener">📍 Open in Maps</a></p>
+<form class="card" onsubmit="return enq(event)"><b>Quick enquiry</b><label for="eq">Your message</label><textarea id="eq" rows="3" maxlength="300" required></textarea><button class="btn k" style="margin-top:10px">Send via WhatsApp</button></form></div></div></section>
+
+<section id="pricing"><div class="w"><h2>Pricing</h2><p class="sub">Indicative prices in ₹, subject to inspection. Parts and oil may be extra.</p><div class="tw"><table><thead><tr><th>Service</th><th>Price</th></tr></thead><tbody id="pt"></tbody></table></div>
+<p><button class="btn" onclick="est()">Request a Custom Estimate</button></p></div></section>
+
+<section id="about" class="alt"><div class="w two"><div><h2>About Us</h2><p class="sub" id="ab2"></p><div class="grid" style="grid-template-columns:1fr 1fr"><div class="card"><b>🏅 Quality first</b><p>Careful work, tested before handover.</p></div><div class="card"><b>🤝 Honest pricing</b><p>Quote shared before work begins.</p></div><div class="card"><b>😊 Customer care</b><p>We explain every repair in plain words.</p></div><div class="card"><b>🔩 Right parts</b><p>Genuine or equivalent, as you choose.</p></div></div></div>
+<div class="gal" style="grid-template-columns:1fr 1fr;align-content:start"><div><span><b>🏭</b>Workshop photo<br>(placeholder)</span></div><div><span><b>👨‍🔧</b>Our mechanic<br>(placeholder)</span></div></div></div></section>
+
+<section id="gallery"><div class="w"><h2>Gallery</h2><p class="sub"><span class="sample">PLACEHOLDERS</span> Replace these tiles with real photos of your workshop.</p><div class="gal"><div><span><b>🔧</b>Bike servicing</span></div><div><span><b>⚙️</b>Engine repair</span></div><div><span><b>🏭</b>Workshop interior</span></div><div><span><b>👨‍🔧</b>Mechanics at work</span></div><div><span><b>🛠️</b>Before repair</span></div><div><span><b>🏍️</b>After repair</span></div></div></div></section>
+
+<section class="alt"><div class="w"><h2>Customer Reviews</h2><p class="sub"><span class="sample">SAMPLE REVIEWS</span> For development only. Show genuine reviews in production.</p><div class="grid">
+<div class="card"><div class="stars">★★★★★</div><p>“Quick service and the price matched the quote.”</p><b>Sample Customer A</b></div>
+<div class="card"><div class="stars">★★★★★</div><p>“They explained the brake problem clearly.”</p><b>Sample Customer B</b></div>
+<div class="card"><div class="stars">★★★★☆</div><p>“Good washing and polishing. Will return.”</p><b>Sample Customer C</b></div></div></div></section>
+</main>
+<footer><div class="w"><b style="color:#fff" id="fn"></b><p><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></p><small>Sample content. Business details are editable placeholders.</small></div></footer>
+<a class="wa" id="waf" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.2 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.6 1 1.4 1.8 2.4 2.3.3.2.5.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.8-.1 1.4z"/></svg></a>
+<dialog id="dlg"></dialog>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const D={biz:{name:'RedLine Two-Wheeler Works',phone:'+91 90598 41368',wa:'919059841368',addr:'Sample Address, Your Area, Your City, India',hours:'Mon–Sat 9:00 AM – 7:00 PM · Sun 10:00 AM – 2:00 PM',about:'Placeholder: introduce your workshop here. Example: 10+ years repairing motorcycles and scooters with a focus on honest advice and dependable work.'},
+svc:[['General bike servicing','Complete check-up, tuning and cleaning.',499,'🔧'],['Engine repair & maintenance','Diagnosis, overhaul and tuning.',799,'⚙️'],['Oil change','Engine oil replacement (oil may be extra).',250,'🛢️'],['Brake repair & replacement','Pads, shoes, cables and adjustment.',199,'🛑'],['Chain cleaning & lubrication','Clean, lube and tension adjustment.',149,'⛓️'],['Tyre puncture & replacement','Tube/tubeless repair and new tyres.',80,'🛞'],['Battery inspection & replacement','Health test, charging, replacement.',199,'🔋'],['Clutch & gear repair','Plate, cable and gear shifting fixes.',399,'🕹️'],['Electrical & wiring','Lights, horn, wiring and fuse faults.',249,'💡'],['Washing & polishing','Foam wash, wax and shine.',99,'✨'],['Scooter servicing','Full service for scooters.',449,'🛵'],['Emergency breakdown assistance','On-call help (call-out charge).',299,'🚨']].map(a=>({n:a[0],d:a[1],p:a[2],i:a[3]})),bk:[]};
+let S=D;try{const x=JSON.parse(localStorage.getItem('rl'));if(x&&x.biz&&x.svc)S=x}catch(e){}
+function save(){try{const j=JSON.stringify(S);localStorage.setItem('rl',j);return localStorage.getItem('rl')===j}catch(e){return false}}
+const wa=t=>'https://wa.me/'+S.biz.wa.replace(/\D/g,'')+'?text='+encodeURIComponent(t);
+function draw(){const b=S.biz;$('#bn').textContent=b.name;$('#fn').textContent=b.name;document.title=b.name+' — Expert Bike Service & Repair';
+ $('#callb').href='tel:'+b.phone.replace(/[^\d+]/g,'');$('#wab').href=wa('Hi, I would like to enquire about a bike service.');$('#waf').href=$('#wab').href;
+ $('#mp').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(b.addr);
+ $('#ct').innerHTML=`<p><b>📍 Address</b><br>${esc(b.addr)}</p><p><b>📞 Phone</b><br>${esc(b.phone)}</p><p style="margin:0"><b>🕘 Hours</b><br>${esc(b.hours)}</p>`;$('#ab2').textContent=b.about;
+ $('#sv').innerHTML=S.svc.map((s,i)=>`<div class="card"><div class="ic">${esc(s.i)}</div><h3>${esc(s.n)}</h3><p>${esc(s.d)}</p><span class="pr">From ₹${esc(s.p)}</span> <button class="btn sm l" style="float:right" onclick="pick(${i})">Book</button></div>`).join('');
+ $('#pt').innerHTML=S.svc.map(s=>`<tr><td>${esc(s.n)}</td><td>₹${esc(s.p)} onwards</td></tr>`).join('');
+ const cur=$('#sv2').value;$('#sv2').innerHTML=S.svc.map(s=>`<option>${esc(s.n)}</option>`).join('')+'<option>Custom estimate</option>';if(cur)$('#sv2').value=cur}
+(function(){const t=[];for(let h=9;h<19;h++)t.push((h%12||12)+':00 '+(h<12?'AM':'PM'));$('#tm').innerHTML=t.map(x=>`<option>${x}</option>`).join('');$('#dt').min=new Date().toISOString().slice(0,10)})();
+function pick(i){$('#sv2').value=S.svc[i].n;$('#book').scrollIntoView();$('#n').focus()}
+function est(){$('#sv2').value='Custom estimate';$('#pb').value='Please share an estimate for: ';$('#book').scrollIntoView();$('#pb').focus()}
+function book(e){e.preventDefault();const v=id=>$('#'+id).value.trim(),er=[];
+ if(v('n').length<2)er.push('Enter your name.');if(!/^[6-9]\d{9}$/.test(v('m')))er.push('Enter a valid 10-digit mobile number.');if(!v('br')||!v('md'))er.push('Enter bike brand and model.');if(!v('dt'))er.push('Choose a date.');else if(v('dt')<$('#dt').min)er.push('Date cannot be in the past.');
+ $('#be').textContent=er.join(' ');$('#bo').innerHTML='';if(er.length)return false;
+ const b={id:'BK-'+Date.now().toString(36).toUpperCase().slice(-6),name:v('n'),mob:v('m'),brand:v('br'),model:v('md'),reg:v('rg'),svc:v('sv2'),date:v('dt'),time:v('tm'),prob:v('pb'),st:'New'};
+ S.bk.push(b);
+ if(!save()){S.bk.pop();$('#bo').innerHTML='<div class="err">Your booking could not be saved on this device, so it is NOT confirmed. Please book via WhatsApp or call us.</div>';return false}
+ const msg=`Booking ${b.id}\nService: ${b.svc}\nBike: ${b.brand} ${b.model}\nDate: ${b.date} ${b.time}\nName: ${b.name}`;
+ $('#bo').innerHTML=`<div class="ok"><b>✅ Booking saved: ${b.id}</b><br>${esc(b.svc)} on ${esc(b.date)} at ${esc(b.time)}. The workshop will confirm by phone.<br><a class="btn sm k" style="margin-top:10px" target="_blank" rel="noopener" href="${wa(msg)}">Also send on WhatsApp</a></div>`;$('#bf').reset();return false}
+function enq(e){e.preventDefault();open(wa('Enquiry: '+$('#eq').value.trim()),'_blank','noopener');return false}
+function owner(){const b=S.biz,f=(k,l)=>`<label>${l}</label><input value="${esc(b[k])}" onchange="S.biz.${k}=this.value;save();draw()">`;
+ $('#dlg').innerHTML=`<div style="display:flex;justify-content:space-between"><h3 style="margin:0">Owner panel</h3><button class="btn sm l" onclick="$('#dlg').close()">Close</button></div>
+ <p class="tag">Demo mode: changes are saved in this browser only and there is no login. A live site needs a backend with owner authentication and a database.</p>
+ <h4>Business details</h4><div class="row"><div>${f('name','Business name')}</div><div>${f('phone','Phone')}</div><div>${f('wa','WhatsApp (country code + number)')}</div><div>${f('hours','Hours')}</div></div>${f('addr','Address')}${f('about','About text')}
+ <h4>Services &amp; prices</h4>${S.svc.map((s,i)=>`<div class="ed"><div class="row"><input value="${esc(s.n)}" aria-label="Name" onchange="S.svc[${i}].n=this.value;save();draw()"><input type="number" min="0" value="${esc(s.p)}" aria-label="Price" onchange="S.svc[${i}].p=Math.max(0,+this.value||0);save();draw()"></div><input style="margin-top:6px" value="${esc(s.d)}" aria-label="Description" onchange="S.svc[${i}].d=this.value;save();draw()"></div>`).join('')}
+ <h4>Bookings (${S.bk.length})</h4>${S.bk.length?S.bk.slice().reverse().map(k=>`<div class="ed"><b>${k.id}</b> · ${esc(k.svc)}<br><span class="tag">${esc(k.name)} · ${esc(k.mob)} · ${esc(k.brand)} ${esc(k.model)} · ${esc(k.date)} ${esc(k.time)}${k.prob?'<br>'+esc(k.prob):''}</span><br><select style="width:auto" onchange="setSt('${k.id}',this.value)">${['New','Confirmed','Completed','Cancelled'].map(x=>`<option${x===k.st?' selected':''}>${x}</option>`).join('')}</select></div>`).join(''):'<div class="tag">No bookings yet.</div>'}`;$('#dlg').showModal()}
+function setSt(id,v){const k=S.bk.find(x=>x.id===id);if(k){k.st=v;save()}}
+draw();
+</script></body></html>
